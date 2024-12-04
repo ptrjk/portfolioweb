@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.landing-page-section {
+    position: relative;
+    padding: 0;
+    height: 90vh;
+    /* height: 650px; */
+    background-color: #CAEAFF;
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    /* width: 1200px; */
+    width: 90%;
+}
+
+.cloud {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    animation-name: cloud-moving;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    z-index: -1;
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    color: #F2FF40;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow:
+        2px 2px 0px black,
+        -2px -2px 0px black,
+        2px -2px 0px black,
+        -2px 2px 0px black;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3 {
+    margin: 0 0 30px 0;
+}
+
+h4 {
+    margin: 0 0 30px 0;
+    font-size: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+button {
+    margin-top: 60px;
+    padding: 10px 15px;
+    font-size: 24px;
+    background-color: white;
+    border: solid 2px black;
+    cursor: pointer;
+    transition: 0.1s background-color;
+}
+
+button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.about-me-section {
+    background-color: #9FFF95;
+    background-image: url(assets/p.png);
+    align-items: center;
+}
+
+@keyframes cloud-moving {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.about-me {
+    margin-bottom: 100px;
+}
+
+.about-me p {
+    text-align: center;
+}
+
+.projects-section {
+    background-color: #9C8375;
+    background-image: url(assets/dirt.png);
+    padding: 50px 0 0 0;
+    position: relative;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.stats-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    padding-top: 10px;
+    font-size: 18px;
+    height: 300px;
+
+}
+
+ul {
+    margin: 0;
+    text-align: start;
+    word-break: break-word;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.test {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 128px;
+    background-image: url(assets/dirtsection.png);
+}
+
+.test2 {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 128px;
+    background-image: url(assets/grass_tile.png);
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    transition: 1s transform;
+    animation: none;
+}
+
+.project .col {
+    align-items: start;
+    justify-content: center;
+}
+
+.project .description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.google-play {
+    display: flex;
+    background-color: #000000;
+    padding: 2px 10px;
+    gap: 10px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.google-play img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.img-background {
+    box-sizing: border-box;
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.other-projects-section {
+    background-color: #d5cc9e8c;
+
+}
+
+.other-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    gap: 10px;
+}
+
+.item2 {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popUp {
+    transition: 0.3s transform ease;
+}
+
+.popUp:hover {
+    transform: scale(1.05);
+}
+
+.item2 p {
+    opacity: 0.5;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item2 h3 {
+    margin-bottom: 10px;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-section {
+    background-color: #434343;
+    background-image: url(assets/cobble.png);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.detail-page a {
+    align-self: flex-start;
+    text-decoration: none;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 60px;
+}
+
+
+.project-details-grid {
+    display: grid;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.project-details-item {
+    width: 100%;
+    aspect-ratio: 5/4;
+    border: 2px solid white;
+}
+
+.project-details-grid video,
+.project-details-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+progress {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    overflow: hidden;
+    border: 1px solid rgb(101, 101, 101);
+    background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+    background-color: #dee342;
+}
+
+progress::-moz-progress-bar {
+    background-color: #cc8c0b;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    background-color: #E8E8E8;
+    padding: 0px 20px;
+    gap: 10px;
+    border: 1px solid rgb(178, 178, 178);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-top: 50px;
+}
