@@ -30,7 +30,13 @@ Throughout this project, I gained hands-on experience with various web developme
 `,
         image: "computer",
         backgroundColor: "aliceblue",
-        content: [],
+        content: [
+            `
+            <video controls>
+                <source src="assets/ecommercevideo.mp4" type="video/mp4">
+            </video>
+            `
+        ],
         link_type: "git",
         url_link: "https://github.com/ptrjk/ecommercePlatform/tree/main",
         id: 2
