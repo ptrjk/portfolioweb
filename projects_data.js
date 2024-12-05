@@ -32,6 +32,7 @@ Throughout this project, I gained hands-on experience with various web developme
         backgroundColor: "aliceblue",
         content: [],
         link_type: "git",
+        url_link: "https://github.com/ptrjk/ecommercePlatform/tree/main",
         id: 2
     },
     {
@@ -72,6 +73,7 @@ The player can interact with the world, manage an inventory system, and chop tre
             `
         ],
         link_type: "git",
+        url_link: "https://github.com/ptrjk/hra",
         id: 4
     },
     {
@@ -90,7 +92,8 @@ The player can interact with the world, manage an inventory system, and chop tre
             `
         ],
         link_type: "git",
-        url_link: "https://ptrjk.github.io/nailsweb/",
+        url_link: "https://github.com/ptrjk/nailsweb",
+        url_link_preview: "https://ptrjk.github.io/nailsweb/",
         id: 5
     },
     {
@@ -100,7 +103,8 @@ The player can interact with the world, manage an inventory system, and chop tre
         backgroundColor: "aliceblue",
         content: [`<img src="assets/noteapp.png", alt="photo of project">`],
         link_type: "git",
-        url_link: "https://ptrjk.github.io/noteapp/",
+        url_link: "https://github.com/ptrjk/noteapp",
+        url_link_preview: "https://ptrjk.github.io/noteapp/",
         id: 6
     }
 ]

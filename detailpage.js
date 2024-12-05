@@ -3,8 +3,6 @@ import { projects } from "./projects_data.js"
 const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('id');
 
-console.log("project id: " + projectId)
-
 function generateProject() {
     const project = findProjectById(projectId)
     if (!project) return
@@ -12,7 +10,7 @@ function generateProject() {
     let link = ""
     if (project.link_type === "googleplay") {
         link = `
-        <a href="https://www.google.com">
+        <a href="https://play.google.com/store/apps/details?id=com.fitnessapp.deadlift">
             <div class="google-play" >
                 <div class="row">
                     <img src="assets/googleplay.png" alt="google play download logo">
@@ -26,14 +24,25 @@ function generateProject() {
         `
     } else if (project.link_type === "git") {
         link = `
-        <a href="${project.url_link}">
-            <div class="github">
-                <div class="row">
-                    <img src="assets/gitlogo.png" alt="google play download logo">
+        <div class="row" style="gap:10px; margin-top:50px;">
+            <a href="${project.url_link}">
+                <div class="github">
+                    <div class="row">
+                        <img src="assets/gitlogo.png" alt="google play download logo">
+                    </div>
+                    <p>GitHub</p>
                 </div>
-                <p>GitHub</p>
-            </div>
-        </a>
+            </a>
+            ${project.url_link_preview ? `
+                <a href="${project.url_link_preview}">
+                    <div class="github">
+                        <div class="row">
+                            <img src="assets/play.png" alt="Preview logo">
+                        </div>
+                        <p>Preview</p>
+                    </div>
+                </a>` : ''}
+        </div>
         `
     }
 
@@ -76,10 +85,3 @@ function findProjectById(id) {
 
 
 generateProject()
-
-
-document.addEventListener("keydown", (e) => {
-    if (e.key === 'e') {
-        console.log("e")
-    }
-})
