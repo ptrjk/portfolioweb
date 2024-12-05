@@ -10,7 +10,7 @@ function generateProject() {
     let link = ""
     if (project.link_type === "googleplay") {
         link = `
-        <a href="https://www.google.com" target="_blank">
+        <a href="https://www.google.com">
             <div class="google-play" >
                 <div class="row">
                     <img src="assets/googleplay.png" alt="google play download logo">
@@ -24,7 +24,7 @@ function generateProject() {
         `
     } else if (project.link_type === "git") {
         link = `
-        <a href="${project.url_Zlink}" target="_blank">
+        <a href="${project.url_Zlink}">
             <div class="github">
                 <div class="row">
                     <img src="assets/gitlogo.png" alt="google play download logo">
