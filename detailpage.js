@@ -76,3 +76,10 @@ function findProjectById(id) {
 
 
 generateProject()
+
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === 'e') {
+        console.log("e")
+    }
+})
