@@ -3,6 +3,8 @@ import { projects } from "./projects_data.js"
 const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('id');
 
+console.log("project id: " + projectId)
+
 function generateProject() {
     const project = findProjectById(projectId)
     if (!project) return
