@@ -99,7 +99,7 @@ The player can interact with the world, manage an inventory system, and chop tre
         backgroundColor: "aliceblue",
         content: [`<img src="assets/noteapp.png", alt="photo of project">`],
         link_type: "git",
-        url_link: "https://ptrjk.github.io/noteapp/index.html",
+        url_link: "https://ptrjk.github.io/ux/",
         id: 6
     }
 ]
