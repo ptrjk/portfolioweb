@@ -90,6 +90,7 @@ The player can interact with the world, manage an inventory system, and chop tre
             `
         ],
         link_type: "git",
+        url_link: "https://ptrjk.github.io/nailsweb/",
         id: 5
     },
     {
@@ -99,7 +100,7 @@ The player can interact with the world, manage an inventory system, and chop tre
         backgroundColor: "aliceblue",
         content: [`<img src="assets/noteapp.png", alt="photo of project">`],
         link_type: "git",
-        url_link: "https://ptrjk.github.io/ux/",
+        url_link: "https://ptrjk.github.io/noteapp/",
         id: 6
     }
 ]
