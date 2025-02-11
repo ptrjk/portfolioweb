@@ -46,14 +46,16 @@ Throughout this project, I gained hands-on experience with various web developme
         description: `
         InterviewBuddy is a team project from "Zive IT Projekty", where we are creating an AI-powered assistant for HR department. The tool is designed to generate valuable and relevant interview questions based on the role and candidate profile.
 <br><br>
-As part of a 5-member team, my main role was UI design and frontend implementation. I worked on creating a user-friendly and visually appealing interface, ensuring that the application was intuitive for both HR professionals and candidates. The project allowed me to enhance my skills in frontend development while collaborating with a multidisciplinary team to deliver a functional and innovative solution for the hiring process.
+This innovative solution empowers HR professionals by saving time, ensuring comprehensive candidate evaluations, and allowing customization for specific job roles and experiences.
+<br><br>
+Although the project is now complete, our team plans to continue its development in the future.
 `,
         image: "computer",
         backgroundColor: "aliceblue",
         content: [
             `
             <video controls>
-                <source src="assets/interviewbuddy.mp4" type="video/mp4">
+                <source src="assets/interviewbuddyvideo.mp4" type="video/mp4">
             </video>
             `
         ],
@@ -73,6 +75,9 @@ The player can interact with the world, manage an inventory system, and chop tre
         backgroundColor: "aliceblue",
         content: [
             `
+            <video controls>
+                <source src="assets/game2.mp4" type="video/mp4">
+            </video>
             <video controls>
                 <source src="assets/game.mp4" type="video/mp4">
             </video>
